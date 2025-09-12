@@ -14,5 +14,3 @@ float Thermique::getCylindree() {
 void Thermique::setCylindree(float newCylindree) {
     this->cylindree = newCylindree;
 }
-
-
