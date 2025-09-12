@@ -1,0 +1,4 @@
+﻿Moto.obj : error LNK2019: symbole externe non résolu "public: __cdecl Moteur::Moteur(void)" (??0Moteur@@QEAA@XZ) référencé dans la fonction "public: __cdecl Moto::Moto(void)" (??0Moto@@QEAA@XZ)
+Moto.obj : error LNK2019: symbole externe non résolu "public: __cdecl Moteur::~Moteur(void)" (??1Moteur@@QEAA@XZ) référencé dans la fonction "public: __cdecl Moto::~Moto(void)" (??1Moto@@QEAA@XZ)
+MSVCRTD.lib(exe_main.obj) : error LNK2019: symbole externe non résolu main référencé dans la fonction "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ)
+C:\Users\Hp\Documents\c++\Projet Diagramme\Projet-c-\Moto\x64\Debug\Moto.exe : fatal error LNK1120: 3 externes non résolus
