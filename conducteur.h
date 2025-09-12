@@ -3,14 +3,11 @@
 
 #include <iostream>
 #include <string>
+#include "Moto.h"
 
-class Conducteur
-{
+class Conducteur {
 public:
-    // Constructeur par défaut
     Conducteur();
-
-    // Destructeur
     ~Conducteur();
 
     // Getters
@@ -18,10 +15,18 @@ public:
     std::string getPrenom();
     int getAnneeNaissance();
 
+    // Gestion des motos
+    void addMoto(Moto newMoto);
+    void rmMoto(int index); 
+    void afficheMotos();
+
 private:
     std::string nom;
     std::string prenom;
     int anneeNaissance;
+
+    Moto mesMotos[10]; 
+    int nbMotos;       
 };
 
 #endif

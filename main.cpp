@@ -1,49 +1,46 @@
 #include <iostream>
-#include "conducteur.h"
+#include "Conducteur.h"
+#include "Moto.h"
 #include "Moteur.h"
 #include "Electrique.h"
 #include "Thermique.h"
-#include "Moto.h"
 
 using namespace std;
 
 int main() {
-    cout << "Hello World !" << endl;
+    cout << "===== Début du programme =====" << endl;
 
-    // --- Test conducteur ---
-    Conducteur c1;
-    cout << "Nom : " << c1.getNom()
-        << ", Prénom : " << c1.getPrenom()
-        << ", Année de naissance : " << c1.getAnneeNaissance() << endl;
+    // 1) Création d’un conducteur
+    Conducteur c1; // valeurs par défaut dans le constructeur
 
-    // --- Test moteur générique ---
-    Moteur m1;
-    cout << "Puissance actuelle : " << m1.getPuissance() << " ch" << endl;
-    m1.setPuissance(150);
-    cout << "Nouvelle puissance : " << m1.getPuissance() << " ch" << endl;
+    // 2) Création d’une moto électrique
+    Electrique moteurElec;
+    moteurElec.setPuissance(120);
+    moteurElec.setTensionMax(400.5f);
 
-    // --- Test moteur électrique ---
-    Electrique me;
-    me.setPuissance(120);
-    me.setTensionMax(400.5f);
-    cout << "[Electrique] Puissance : " << me.getPuissance()
-        << " ch, Tension max : " << me.getTensionMax() << " V" << endl;
+    Moto motoElec;
+    motoElec.setPoids(180);
+    motoElec.setMoteur(moteurElec);
 
-    // --- Test moteur thermique ---
-    Thermique mt;
-    mt.setPuissance(200);
-    mt.setCylindree(2.0f);
-    cout << "[Thermique] Puissance : " << mt.getPuissance()
-        << " ch, Cylindrée : " << mt.getCylindree() << " L" << endl;
+    // 3) Création d’une moto thermique
+    Thermique moteurTherm;
+    moteurTherm.setPuissance(200);
+    moteurTherm.setCylindree(2.0f);
 
-    // --- Test Moto ---
-    Moto moto1;
-    moto1.setPoids(180);
-    moto1.setMoteur(m1);
+    Moto motoTherm;
+    motoTherm.setPoids(220);
+    motoTherm.setMoteur(moteurTherm);
 
-    cout << "[Moto] Poids : " << moto1.getPoids()
-        << " kg, Puissance moteur : " << moto1.getMoteur().getPuissance()
-        << " ch" << endl;
+    // 4) Attribution des deux motos au conducteur
+    c1.addMoto(motoElec);
+    c1.addMoto(motoTherm);
 
+    // 5) Affichage des informations
+    cout << "\n--- Infos Conducteur et ses motos ---" << endl;
+    cout << "Conducteur : " << c1.getNom() << " " << c1.getPrenom()
+        << " (" << c1.getAnneeNaissance() << ")" << endl;
+    c1.afficheMotos();
+
+    cout << "===== Fin du programme =====" << endl;
     return 0;
 }
