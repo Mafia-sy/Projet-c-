@@ -3,10 +3,10 @@
 using namespace std;
 
 /**
- * \brief Constructeur par d�faut
+ * \brief Constructeur par defaut
  */
 Moteur::Moteur() {
-    this->puissance = 20; // Valeur par d�faut en entier
+    this->puissance = 30; // Valeur par d�faut en entier
     cout << "Constructeur par d�faut appel� !" << endl;
 }
 
