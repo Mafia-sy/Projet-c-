@@ -5,7 +5,7 @@
 #include <string>
 #include "Moto.h"
 
-class Conducteur {
+classe Conducteur {
 public:
     Conducteur();
     ~Conducteur();
@@ -25,7 +25,7 @@ private:
     std::string prenom;
     int anneeNaissance;
 
-    Moto mesMotos[10]; 
+    Moto mesMotos[12]; 
     int nbMotos;       
 };
 
