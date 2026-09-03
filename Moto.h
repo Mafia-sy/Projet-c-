@@ -1,4 +1,4 @@
-#ifndef MOTO_H.
+#ifndef MOTO_H
 #define MOTO_H
 
 #include <iostream>
