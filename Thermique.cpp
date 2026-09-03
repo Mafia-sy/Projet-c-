@@ -1,4 +1,4 @@
-#include "Thermique.h"
+#include "Thermique.h".
 
 Thermique::Thermique() {
     cylindree = 0.0f;
