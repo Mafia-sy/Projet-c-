@@ -1,7 +1,7 @@
 #include "Electrique.h"
 
 Electrique::Electrique() {
-    tensionMax = 0.0f;
+    tensionMax = 10.0f;
 }
 
 Electrique::~Electrique() {
