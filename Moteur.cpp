@@ -3,11 +3,11 @@
 using namespace std;
 
 /**
- * \brief Constructeur par défaut
+ * \brief Constructeur par dï¿½faut
  */
 Moteur::Moteur() {
-    this->puissance = 20; // Valeur par défaut en entier
-    cout << "Constructeur par défaut appelé !" << endl;
+    this->puissance = 20; // Valeur par dï¿½faut en entier
+    cout << "Constructeur par dï¿½faut appelï¿½ !" << endl;
 }
 
 /**

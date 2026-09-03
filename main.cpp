@@ -8,12 +8,12 @@
 using namespace std;
 
 int main() {
-    cout << "===== Début du programme =====" << endl;
+    cout << "===== Dï¿½but du programme =====" << endl;
 
-    // 1) Création d’un conducteur
-    Conducteur c1; // valeurs par défaut dans le constructeur
+    // 1) Crï¿½ation dï¿½un conducteur
+    Conducteur c1; // valeurs par dï¿½faut dans le constructeur
 
-    // 2) Création d’une moto électrique
+    // 2) Crï¿½ation dï¿½une moto ï¿½lectrique
     Electrique moteurElec;
     moteurElec.setPuissance(120);
     moteurElec.setTensionMax(400.5f);
@@ -22,7 +22,7 @@ int main() {
     motoElec.setPoids(180);
     motoElec.setMoteur(moteurElec);
 
-    // 3) Création d’une moto thermique
+    // 3) Crï¿½ation dï¿½une moto thermique
     Thermique moteurTherm;
     moteurTherm.setPuissance(200);
     moteurTherm.setCylindree(2.0f);

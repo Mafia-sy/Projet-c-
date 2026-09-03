@@ -3,8 +3,7 @@
 
 #include "Moteur.h"
 
-class Thermique : public Moteur
-{
+class Thermique : public Moteur {
 public:
     Thermique();
     ~Thermique();
@@ -16,4 +15,4 @@ private:
     float cylindree;
 };
 
-#endif 
+#endif

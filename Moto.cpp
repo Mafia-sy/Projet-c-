@@ -1,11 +1,11 @@
 #include "Moto.h"
 
-// Constructeur par défaut
+// Constructeur par dï¿½faut
 Moto::Moto() : poids(0), moteur() {}
 
 // Destructeur
 Moto::~Moto() {
-    std::cout << "Moto détruite" << std::endl;
+    std::cout << "Moto dï¿½truite" << std::endl;
 }
 
 // Getter Poids

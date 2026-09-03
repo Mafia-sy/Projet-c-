@@ -7,7 +7,7 @@
 class Moteur
 {
 public:
-    // Constructeur par défaut
+    // Constructeur par dï¿½faut
     Moteur();
 
     // Destructeur
