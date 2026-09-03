@@ -1,4 +1,4 @@
-#include "Electrique.h"
+#include "Electrique.h" o
 
 Electrique::Electrique() {
     tensionMax = 0.0f;
