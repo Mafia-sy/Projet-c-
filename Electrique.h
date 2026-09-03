@@ -1,4 +1,4 @@
-#ifndef ELECTRIQUE_H o 
+#ifndef ELECTRIQUE_H
 #define ELECTRIQUE_H
 
 #include "Moteur.h"

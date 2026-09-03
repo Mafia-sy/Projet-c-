@@ -1,9 +1,9 @@
 ﻿#include "Conducteur.h"
 
 Conducteur::Conducteur() {
-    nom = "Inconnu";
-    prenom = "Inconnu";
-    anneeNaissance = 2000;
+    nom = "ismail";
+    prenom = "noah";
+    anneeNaissance = 2004;
     nbMotos = 0;
 }
 
@@ -23,7 +23,7 @@ int Conducteur::getAnneeNaissance() {
 }
 
 void Conducteur::addMoto(Moto newMoto) {
-    if (nbMotos < 10) {
+    if (nbMotos < 12) {
         mesMotos[nbMotos] = newMoto;
         nbMotos++;
     } else {

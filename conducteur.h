@@ -5,7 +5,7 @@
 #include <string>
 #include "Moto.h"
 
-classe Conducteur {
+class Conducteur {
 public:
     Conducteur();
     ~Conducteur();
